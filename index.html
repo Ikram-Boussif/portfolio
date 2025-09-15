@@ -3,19 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- meta : pour l'encodage de fichier  -->
   <title>Ikram BOUSSIF | Front End Engineer</title>
   <link rel="stylesheet" type="text/css" href="design/default.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" text="image/jpg" href="pictures/favicon.jpg">
 </head>
 
 <body>
   <header>
-    <!-- Barre supérieure -->
     <div class="header-bar">
       <div class="header-left">
         <a href="mailto:ikram.boussif.tn@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
@@ -30,222 +29,250 @@
         </a>
       </div>
 
-      <!-- <div class="header-right">
-        <button id="mode"><i class="fas fa-moon" id="themeIcon"></i></button>
+      <div class="header-right">
+        <button id="mode"><i class="fas fa-moon" id="iconTheme"></i></button>
+        <button id="toggleLang" class="lang-toggle">EN</button>
       </div>
-      <button id="toggleLang" class="lang-toggle">EN</button> -->
-
-       <div class="header-right">
-  <button id="mode"><i class="fas fa-moon" id="themeIcon"></i></button>
-  <button id="toggleLang" class="lang-toggle">EN</button>
-</div>
 
 
     </div>
 
-    <!-- Contenu centré -->
     <div class="header-center" data-lang="en">
       <h1>Hello, I'm Ikram BOUSSIF,</h1>
       <span class="separator"></span>
-      <h2>Software Engineer</h2>
+      <h2>Front-End developer</h2>
     </div>
 
     <div class="header-center" data-lang="fr">
       <h1>Bienvenue, je suis Ikram BOUSSIF,</h1>
       <span class="separator"></span>
       <h2>Développeuse Front-End.</h2>
-
     </div>
 
   </header>
 
 
-  <!-- MENU -->
-  <nav>
-    <ul>
-      <li><a data-lang="en" class="visible" href="index.html" title="Accueil">ABOUT</a></li>
-      <li><a data-lang="en" class="visible" href="#experience" title="experience">EXPERIENCE</a></li>
-      <li><a data-lang="en" class="visible" href="#projets" title="Projets">PROJECTS</a></li>
 
-      <li><a data-lang="fr" href="index.html" title="Accueil">Présentation</a></li>
-      <li><a data-lang="fr" href="#experience" title="experience">Experiences</a></li>
-      <li><a data-lang="fr" href="#projets" title="Projets">Projets</a></li>
+  <nav>
+    <ul data-lang="en">
+      <li><a class="visible" href="#experience" title="Experience">EXPERIENCE</a></li>
+      <li><a class="visible" href="#projets" title="Projets">PROJECTS</a></li>
+      <li><a class="visible" href="#contact" title="Contact">CONTACT</a></li>
+    </ul>
+    <ul data-lang="fr">
+      <li><a href="#experience" title="Experience">EXPÉRIENCE</a></li>
+      <li><a href="#projets" title="Projets">PROJETS</a></li>
+      <li><a href="#contact" title="Contact">CONTACT</a></li>
     </ul>
   </nav>
   <div class="contener">
-    <!-- PRESENTATION -->
+   
     <section>
-      <!-- <h3>ABOUT ME</h3> -->
-      <!-- <h3>ABOUT ME</h3> -->
-      </br>
+      <br></br>
       <p data-lang="en">
-        <!-- As A Web Developer, I'm responsible for designing And Developing Web Pages.
+        As A Web Developer, I'm responsible for designing And Developing Web Pages.
         My primary focus is to create responsive, user-Friendly Experiences that meet the needs of a Diverse
         Online Audience.
-
-        With 2 years of experience in front end development, I specialize in developing high-performance web applications using Angular.
-Passionate about designing dynamic user interfaces and delivering quality solutions that enhance the digital experience. -->
-
-        <!-- As a front-end developer specialized in Angular, I build high-performance web applications with a strong focus
-        on user experience.
-        I'm passionate about designing dynamic, responsive interfaces and delivering reliable, user-friendly solutions
-        that meet the needs of a diverse online audience. -->
-
       </p>
-      <!-- <p data-lang="fr">
-        En tant que développeuse front-end spécialisée en Angular, je conçois des applications web performantes avec une attention particulière portée à l’expérience utilisateur. Passionnée par la création d’interfaces dynamiques et responsives,
-         je m’engage à fournir des solutions fiables, intuitives et adaptées aux besoins d’un large public en ligne.
-      </p> -->
+      <p data-lang="fr">
+        En tant que développeuse front-end spécialisée en Angular, je conçois des applications web performantes avec une
+        attention particulière portée à l’expérience utilisateur. </p>
+      <p style="margin-top:-10px"></p>
+      <p data-lang="fr">
+        Passionnée par la création d’interfaces dynamiques et
+        responsives, je m’engage à fournir des solutions fiables, intuitives et adaptées aux besoins d’un large public
+        en ligne.
+      </p> <br><br>
+
     </section>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
- 
+    </br></br>
 
-
-   
-
-
-    <div class="experience-container">
-      <div class="experience-card" id="experience">
-        <div class="card-header">
-          <h2 data-lang="en">Frontend developer</h2>
-          <h2 data-lang="fr">Développeur Front End</h2>
-          <span class="years">June 2023 – Present</span>
-          <button class="toggle-btn">−</button>
-        </div>
-        <div class="card-body active">
-          <div data-lang="en">
-            <p class="indent">Improved user satisfaction by optimizing real-time chat performance and implementing
-              intuitive
-              notifications,ensuring timely and efficient communication.
-            </p>
-            <p class="indent">
-              Participated in the development of a dashboard system that offers users a visual representation of
-              different
-              operations
-            </p>
-            <p class="indent">
-              Developed functionalities for service cost estimation and billing management.
-            </p>
-            <p class="indent">
-              Improved code quality and maintainability by implementing SonarQube and SonarLint, leading to a 25%
-              decrease
-              in load times and enhancing overall application performance.
-            </p>
-            <p class="indent">
-              Designed and implemented user-centric features to store custom search filters and display preferences.
-            </p>
-            <p class="indent">
-              Participated in the migration process from Angular 14 to Angular 18, including the creation of technical
-              documentation and code cleanup.
-            </p>
-          </div>
-
-
-
-
-          <div data-lang="fr">
-            Optimisation de la satisfaction des utilisateurs grâce à l'amélioration des performances du chat en temps
-            réel et en
-            implémentant un système de notifications intuitives, garantissant une communication fluide et rapide.
-            </br>
-            Participation au développement du système de Dashboard fournissant aux utilisateurs une visualisation des
-            diverses opérations</br>
-            Développement de fonctionnalités pour l'estimation des coûts de service et la gestion de la
-            facturation.</br>
-            Amélioration de la qualité et de la maintenabilité du code en utilisant SonarQube et SonarLint.</p>
-          </div>
-
-          <div class="tags">
-            <span>Angular 14</span>
-            <span>Angular 18</span>
-            <span>TypeScript</span>
-            <span>RxJS</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>PrimeNG</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>MySQL</span>
-            <span>REST API</span>
-            <span>SonarQube</span>
-            <span>SonarLint</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="experience-card">
-        <div class="card-header">
-          <h2 data-lang="en">End of studies project</h2>
-          <h2 data-lang="fr">Stage de projet de fin d’études</h2>
-          <span class="years">2023 – Present</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="card-body">
-
-          <div data-lang="en">
-            <p class="indent">• Designed and implemented a web application from scratch using Angular, with a focus on
-              reusable components and
-              maintainable code for one of the company’s flagship products ‘Datacup’.
-
-            </p>
-            <p class="indent">
-              • Participated in resolving various related issues including backend Spring Boot, infrastructure
-              deployment, and offline
-              challenges.
-            </p>
-          </div>
-          <div class="tags">
-            <span>Angular 13</span>
-            <span>TypeScript</span>
-            <span>RxJS</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Bootstrap</span>
-            <span>Chart.js</span>
-            <span>REST API</span>
-            <span>Git</span>
-            <span>GitLab</span>
-            <span>Jenkins</span>
-            <span>Nexus</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="experience-card">
-        <div class="card-header">
-          <h2 data-lang="en">Academic Internship</h2>
-          <h2 data-lang="fr">Stage de projet de fin d’études</h2>
-          <span class="years">2023 – Present</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="card-body">
-          <div data-lang="en">
-            <p class="indent">Designed and developed a website that offers consulting and sales services for plant-based
-              biotherapeutic
-              products using Spring Boot and Angular.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- PROJET -->
     <section>
-      <h3>Projets académiques</h3>
-      <!-- CONTENEUR -->
-      <!-- PROJET 1 -->
+      <h3 data-lang="fr">Expériences</h3>
+      <h3 data-lang="en">Experiences</h3>
+      <div class="experience-container">
+
+        <div class="experience-card">
+          <div class="card-header">
+            <h2 data-lang="en">Frontend developer</h2>
+            <h2 data-lang="fr">Développeur Front End</h2>
+            <span data-lang="en" class="years">June 2023 – Present</span>
+            <span data-lang="fr" class="years">juin 2023 – Présent</span>
+            <button class="toggle-btn">−</button>
+          </div>
+          <div class="card-body active">
+            <div data-lang="en">
+              <p class="indent">Improved user satisfaction by optimizing real-time chat performance and implementing
+                intuitive
+                notifications,ensuring timely and efficient communication.
+              </p>
+              <p class="indent">
+                Participated in the development of a dashboard system that offers users a visual representation of
+                different
+                operations
+              </p>
+              <p class="indent">
+                Developed functionalities for service cost estimation and billing management.
+              </p>
+              <p class="indent">
+                Improved code quality and maintainability by implementing SonarQube and SonarLint, leading to a 25%
+                decrease
+                in load times and enhancing overall application performance.
+              </p>
+              <p class="indent">
+                Designed and implemented user-centric features to store custom search filters and display preferences.
+              </p>
+              <p class="indent">
+                Participated in the migration process from Angular 14 to Angular 18, including the creation of technical
+                documentation and code cleanup.
+              </p>
+            </div>
+
+            <div data-lang="fr">
+              <p class="indent">
+                Optimisation de la satisfaction des utilisateurs grâce à l'amélioration des performances du chat en
+                temps
+                réel et en implémentant un système de notifications intuitives, garantissant une communication fluide et
+                rapide.
+              </p>
+              <p class="indent">
+                Participation au développement du système de Dashboard fournissant aux utilisateurs une visualisation
+                des
+                diverses opérations.
+              </p>
+              <p class="indent">
+                Développement de fonctionnalités pour l'estimation des coûts de service et la gestion de la
+                facturation.
+              </p>
+              <p class="indent">
+                Amélioration de la qualité et de la maintenabilité du code en utilisant SonarQube et SonarLint.
+              </p>
+              <p class="indent">
+                Mise en place de nouvelles fonctionnalités permettant à l’utilisateur d’enregistrer ses préférences de
+                recherche et d’affichage, pour une utilisation plus rapide et personnalisée.
+              </p>
+              <p class="indent">
+                Participation à la migration d'Angular 14 vers Angular 18, incluant la rédaction de la documentation
+                technique et l’amélioration de la qualité du code.
+              </p>
+            </div>
+
+            <div class="tags">
+              <span>Angular 14</span>
+              <span>Angular 18</span>
+              <span>TypeScript</span>
+              <span>RxJS</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>PrimeNG</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>MySQL</span>
+              <span>REST API</span>
+              <span>SonarQube</span>
+              <span>SonarLint</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <h2 data-lang="en">End of studies project</h2>
+            <h2 data-lang="fr">Stage de projet de fin d’études</h2>
+            <span data-lang="en" class="years">March – october 2022</span>
+            <span data-lang="fr" class="years">mars – octobre 2022</span>
+            <button class="toggle-btn">+</button>
+          </div>
+          <div class="card-body">
+
+            <div data-lang="en">
+              <p class="indent">Designed and implemented a web application from scratch using Angular, with a focus on
+                reusable components and maintainable code for one of the company’s flagship products ‘Datacup’.
+              </p>
+              <p class="indent">
+                Participated in resolving various related issues including backend Spring Boot, infrastructure
+                deployment, and offline
+                challenges.
+              </p>
+            </div>
+            <div data-lang="fr">
+              <p class="indent">Développement d’une application Angular pour l’un des produits phares de la société
+                Datacup, en privilégiant des
+                composants réutilisables ce qui a contribué à la qualité et à la performance de l’application.
+              </p>
+              <p class="indent">
+                Collaboration avec le designer UI/UX pour développer des interfaces intuitives, ergonomiques et
+                cohérentes, tout
+                en optimisant l'expérience utilisateur.
+              </p>
+              <p class="indent">
+                Contribution à la résolution de divers problèmes techniques, notamment liés à Spring Boot, au
+                déploiement
+                de l’application et à la gestion des fonctionnalités hors ligne.
+              </p>
+            </div>
+            <div class="tags">
+              <span>Angular 13</span>
+              <span>TypeScript</span>
+              <span>RxJS</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Bootstrap</span>
+              <span>Chart.js</span>
+              <span>REST API</span>
+              <span>Git</span>
+              <span>GitLab</span>
+              <span>Jenkins</span>
+              <span>Nexus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <h2 data-lang="en">Academic Internship</h2>
+            <h2 data-lang="fr">Stage Ingénieur</h2>
+            <span data-lang="en" class="years">July – September 2021</span>
+            <span data-lang="fr" class="years">juillet – septembre 2021</span>
+            <button class="toggle-btn">+</button>
+          </div>
+          <div class="card-body">
+            <div data-lang="en">
+              <p class="indent">Designed and developed a website that offers consulting and sales services for
+                plant-based
+                biotherapeutic
+                products using Spring Boot and Angular.
+              </p>
+            </div>
+            <div data-lang="fr">
+              <p class="indent">Développement d’un site web de conseil et de vente de produits biothérapeutiques à base
+                de plantes, en
+                utilisant Spring Boot pour le backend et Angular pour le frontend.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </br>
+    <!-- PROJET 1 -->
+    <section>
+      <h3 data-lang="fr">Projets académiques</h3>
+      <h3 data-lang="en">Academic Projects</h3>
+    
       <div id="projets">
         <div class="projet">
-          <a href="firstproject.html">
+          <a href="kindergarten-project.html">
             <div class="picture">
-              <img src="pictures/kindergarten-flyer.png" alt="mon premier projet" title="firstproject" />
+              <img data-lang="en" src="pictures/kindergarten-flyer.png" alt="kindergarten project"
+                title="kindergarten" />
+              <img data-lang="fr" src="pictures/kindergarten-flyer.png" alt="kindergarten project"
+                title="Plateforme de gestion pour maternelle" />
             </div>
             <p data-lang="en" class="visible">Kindergarten</p>
             <p data-lang="fr">Plateforme de gestion pour maternelle</p>
-            <!-- <span class="date-project">18 / 05 / 2021</span> -->
           </a>
         </div>
 
@@ -255,20 +282,36 @@ Passionate about designing dynamic user interfaces and delivering quality soluti
         <div class="projet">
           <a href="herbin-project.html">
             <div class="picture">
-              <img src="./pictures/accueil-herbin.png" alt="mon premier projet" title="firstproject" />
+              <img src="pictures/herbinProject/accueil-herbin.png" alt="herbin project" title="herbin" />
             </div>
-            <span>herbin</span>
+            <p>Herbin</p>
           </a>
         </div>
+        </br> </br>
+        <h3 data-lang="en">Personal Projects</h3>
+        <h3 data-lang="fr">Projets personnels</h3>
         </br>
-        <h3>mini projects</h3>
         <div class="projet">
           <a>
             <div class="picture">
-              <img src="pictures/meteo.png" alt="mon premier projet" title="firstproject" />
+              <img data-lang="en" src="pictures/meteo.png" alt="meteo project" title="weather" />
+              <img data-lang="fr" src="pictures/meteo.png" alt="meteo project" title="météo" />
             </div>
             <p data-lang="en" class="visible">Weather</p>
-            <p data-lang="fr">météo</p>
+            <p data-lang="fr">Météo</p>
+          </a>
+        </div>
+
+              <!-- PROJET 3 -->
+
+        <div class="projet">
+          <a href="just-price-project.html">
+            <div class="picture">
+              <img data-lang="en" src="pictures/theRightPrice.png" alt="just-price-project" title="The Right Price" />
+              <img data-lang="fr" src="pictures/theRightPrice.png" alt="just-price-project" title="Le juste prix" />
+            </div>
+            <p data-lang="en" class="visible">The Right Price</p>
+            <p data-lang="fr">Le juste prix</p>
           </a>
         </div>
       </div>
@@ -277,7 +320,11 @@ Passionate about designing dynamic user interfaces and delivering quality soluti
     <section>
       <h3>Contact</h3>
       <div id="contact">
-        <p>If you would like to contact me, feel free to send me an email at <b><a href="
+        <p data-lang="en">If you would like to contact me, feel free to send me an email at <b><a href="
+              mailto:ikram.boussif.tn@gmail.com">ikram.boussif.tn@gmail.com</a></b>.</p>
+
+        <p data-lang="fr">Si vous souhaitez me contacter, n’hésitez pas à m’envoyer un e-mail à l’adresse suivante <b><a
+              href="
               mailto:ikram.boussif.tn@gmail.com">ikram.boussif.tn@gmail.com</a></b>.</p>
       </div>
 
@@ -292,7 +339,9 @@ Passionate about designing dynamic user interfaces and delivering quality soluti
   </footer>
 
 
-  <script src="index.js"></script>
+  <!-- <script src="index.js"></script> -->
+  <script src="theme.js"></script>
+
 </body>
 
 </html>
