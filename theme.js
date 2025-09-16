@@ -17,7 +17,7 @@ cards.forEach(card => {
     });
 });
 
-let currentLang = 'en'; // default displayed language
+let currentLang = localStorage.getItem('language') || 'en'; 
 
 function updateLanguageDisplay() {
     const elements = document.querySelectorAll('[data-lang]');
@@ -30,6 +30,7 @@ function updateLanguageDisplay() {
 
     // Update the button text
     toggleBtnLg.textContent = currentLang === 'en' ? 'FR' : 'EN';
+    localStorage.setItem('language', currentLang);
 }
 
 function switchLanguage() {
