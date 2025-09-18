@@ -4,23 +4,34 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #F4F7f6;
+  font-family: "Roboto", sans-serif;
+  background: #f4f7f6;
   color: #000;
   margin: 0;
   border: 1px pink double;
 }
+h1, h2, h3 {
+  font-weight: 700; /* bold */
+}
+
+
 
 /* === HEADER === */
 header {
-  background: linear-gradient(to right, #4389A2, #5C258D);
-  color: #F4F7F6;
-  padding: 30px 20px;
-  height: 200px;
+  background: linear-gradient(to right, #4389a2, #5c258d);
+  color: #f4f7f6;
+height: 200px;
+    padding: 0 20px;            
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;     
+
 }
 
-/* Ligne supérieure (icônes à gauche et bouton à droite) */
+
 .header-bar {
+    width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,8 +42,9 @@ header {
   display: flex;
   gap: 15px;
 }
+
 .header-left a {
-  color: #F4F7F6;
+  color: #f4f7f6;
   font-size: 1.5rem;
   transition: color 0.3s;
 }
@@ -51,7 +63,7 @@ header {
   color: #90caf9;
 }
 
-/* Partie centrale (nom + titre) */
+
 .header-center {
   text-align: center;
   display: flex;
@@ -60,13 +72,13 @@ header {
   justify-content: center;
 }
 .header-center h1 {
-  font-family: 'skymoon', Arial, sans-serif;
+  font-family: "skymoon", Arial, sans-serif;
   font-size: 2rem;
   margin: 0;
   padding: 0;
 }
 .header-center h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 10px;
@@ -117,12 +129,11 @@ section .h3 {
   text-align: center;
 }
 section .experience-container {
-   text-align: left;
+  text-align: left;
 }
 p + p {
-  margin-top: 0.2em; 
+  margin-top: 0.2em;
 }
-
 
 h3 {
   font-size: 1.5em;
@@ -136,11 +147,16 @@ h3:after {
   content: " »";
   color: grey;
 }
-h1:active {
-  color: red;
+
+
+h1,
+h2,
+h3 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
-
-
+p {
+  line-height: 1.5;
+}
 /* === PROJETS === */
 #projet {
   display: flex;
@@ -155,28 +171,96 @@ h1:active {
   padding-bottom: 15px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .projet:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.3s;
 }
 .projet img {
   min-width: 400px;
   height: 266px;
 }
-.projet span {
-  display: block;
-  text-transform: uppercase;
-}
-.projet .date-project {
-  font-size: 0.7em;
-}
 .picture {
   width: 400px;
   height: 266px;
   overflow: hidden;
   margin-bottom: 15px;
+}
+/* Styles mobiles */
+@media (max-width: 768px) {
+  .projet {
+    width: 50%;          
+    max-width: 80%;    
+    height: 200px;  
+    margin: 15px auto;     
+    display: block;        
+  }
+  .projet img {
+    min-width: unset;  
+    width: 100%;       
+    height: auto;     
+    object-fit: contain; 
+  }
+
+  .picture {
+    width: 100%;
+    height: auto; 
+  }
+
+   .header-center h1 {
+    font-size: 1.5rem;   
+    text-align: center;  
+  }
+
+  .header-center h2 {
+    font-size: 1.1rem;   
+  }
+
+  .separator {
+    width: 50%;          
+  }
+.header-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;   
+  }
+
+  .header-left,
+  .header-right {
+    display: flex !important;
+    align-items: center !important;   
+    margin: 0 !important;
+  }
+
+  .header-left {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  .header-right {
+    justify-content: flex-end !important;
+    text-align: right !important;
+  }
+
+  .header-left a, 
+  .header-right button {
+    font-size: 1.2rem;
+    line-height: 1;
+     justify-content: center;
+      padding: 0;
+      height: 40px;
+  }
+  nav {
+  font-size: 0.85rem;
+}
+.card-header h2 {
+  font-size: 0.9rem !important;
+}
+.card-header span {
+   font-size: 0.8rem !important;
+}
 }
 
 /* === CONTACT === */
@@ -189,8 +273,8 @@ h1:active {
 
 /* === FOOTER === */
 footer {
-  background: #1D1D1D;
-  color: #FFF;
+  background: #1d1d1d;
+  color: #fff;
   text-align: center;
   padding: 15px;
 }
@@ -245,8 +329,8 @@ body.dark #mode {
 
 /* === POLICE === */
 @font-face {
-  font-family: 'skymoon';
-  src: url('../src/skymoon.otf') format('truetype');
+  font-family: "skymoon";
+  src: url("../src/skymoon.otf") format("truetype");
 }
 
 /* === MEDIA QUERIES === */
@@ -263,14 +347,13 @@ body.dark #mode {
     width: 100%;
     height: auto;
   }
-  h2 {
-    width: 90%;
-  }
+  
   .header-bar {
     flex-direction: column;
     gap: 10px;
   }
-  .header-left, .header-right {
+  .header-left,
+  .header-right {
     justify-content: center;
   }
 }
@@ -290,21 +373,21 @@ body.dark #mode {
 }
 
 .card-header {
-   display: grid;
-  grid-template-columns: 1fr auto auto; 
+  display: grid;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
   gap: 1rem;
 }
 
 .card-header h2 {
-    margin: 0;
+  margin: 0;
   color: #a78bfa;
+  font-size: 1.2rem;
 }
 
 .years {
-   font-weight: bold;
-  justify-self: start; 
-
+  font-weight: bold;
+  justify-self: start;
 }
 
 .toggle-btn {
@@ -317,13 +400,6 @@ body.dark #mode {
   width: 30px;
   height: 30px;
 }
-/* .toggle-content {
-  display: none;
-}
-.toggle-content.active {
-  display: block;
-} */
-
 
 .card-body {
   margin-top: 1rem;
@@ -339,7 +415,6 @@ body.dark #mode {
 .card-body.active {
   display: block;
 }
-
 
 .tags {
   margin-top: 1rem;
@@ -358,10 +433,8 @@ body.dark #mode {
 [data-lang] {
   display: none; /* By default: all multilingual elements are hidden */
 }
-
-
 .visible {
-  display: inline; /* ou block si c’est des paragraphes */
+  display: inline; 
   /* Only the one with the .visible class will be displayed */
 }
 .indent {
@@ -376,15 +449,13 @@ body.dark #mode {
   transition: transform 0.2s ease;
 }
 
-/* .icon-link:hover {
-  transform: scale(1.2);
-} */
- .header-right {
-  position: absolute; /* or fixed if you want it always visible */
+
+.header-right {
+  position: absolute; 
   top: 20px;
   right: 20px;
   display: flex;
-  flex-direction: row-reverse; /* Important: this puts themeIcon first */
+  flex-direction: row-reverse; /* this puts themeIcon first */
   align-items: center;
   gap: 10px;
   z-index: 1000;
@@ -404,12 +475,12 @@ body.dark #mode {
   margin: 40px auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
 
 .project-card h2 {
-  font-size: 24px;
+  /* font-size: 24px; */
   margin-bottom: 10px;
 }
 
@@ -450,6 +521,7 @@ body.dark .tools span {
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .live-link {
@@ -461,4 +533,22 @@ body.dark .tools span {
   border: 2px solid #6c5ce7;
   color: #6c5ce7;
 }
+.video-container {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.picture-projet img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 10px; 
+}
 
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
